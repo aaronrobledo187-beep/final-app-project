@@ -9,7 +9,7 @@ const quotes = [
   { text: "Nunca digas que no puedes.", author: "Alvaro Robledo"},
   { text: "Believe you can and you're half way there.", author: "Theodore Roosevelt"},
   { text: "I am A product of my circumstances. I am a product of my decisions." , author: "Stephen R Covey"},
-  { text: ""}
+  { text: "echale ganas mijo." , author:"Alvaro Robledo"},
 ];
 
 function displayNewQuote() {
