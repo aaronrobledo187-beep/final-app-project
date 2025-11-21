@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Random Quote Generator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"defer></script>
   </head>
   <body>
     <main class="app">
@@ -14,6 +13,12 @@
       <section class="card" id="quote-card" aria-live="polite">
         <p id="quote" class="quote">"Loading inspirational quote..."</p>
         <p id="author" class="author">— Unknown</p>
+        <div class="add-quote-section">
+        <h3>Add Your Own Quote</h3>
+        <input type="text" id="new-quote-text" placeholder="Enter quote text">
+        <input type="text" id="new-author" placeholder="Enter author name">
+        <button id="add-quote-btn">Add Quote</button>
+</div>
 
         <div class="controls">
           <button id="new-quote" class="btn">New Quote</button>
