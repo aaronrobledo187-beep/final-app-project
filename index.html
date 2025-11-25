@@ -12,16 +12,20 @@
 
       <section class="card" id="quote-card" aria-live="polite">
         <p id="quote" class="quote">"Loading inspirational quote..."</p>
-        <p id="author" class="author">— Unknown</p>
+        <p id="author" class="author" onclick="add">— Unknown</p>
         <div class="add-quote-section">
         <h3>Add Your Own Quote</h3>
         <input type="text" id="new-quote-text" placeholder="Enter quote text">
         <input type="text" id="new-author" placeholder="Enter author name">
         <button id="add-quote-btn">Add Quote</button>
 </div>
+          <div id="quote-text"></div>
+          <div id="quote-author"></div>
 
-        <div class="controls">
-          <button id="new-quote" class="btn">New Quote</button>
+         
+          
+              <div class="controls">
+          <button id="new-quote" class="btn"  onclick="displayQuote()">New Quote</button>
           <button id="copy-quote" class="btn btn-ghost">Copy</button>
         </div>
       </section>
