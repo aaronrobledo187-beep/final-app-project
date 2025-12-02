@@ -29,14 +29,25 @@ function displayQuote() {
   let quote = allQuotes[randomIndex];
   let quoteElement = document.getElementById("quote");
   quoteElement.innerText =quote.text;
-  let Unknown = author;
+  
+
+   let authorElement = document.getElementById("author");
+   authorElement.innerText = quote.author || "Unknown"; 
+
+
+
+
 }
 
 
 
 
 function addCustomQuote(text, author) {
-  
+  let newQuote = {
+    text: text
+    author: author
+    
+  }
 }
 
 
