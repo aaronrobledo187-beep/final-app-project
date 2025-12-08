@@ -8,7 +8,14 @@ const allQuotes = [
   { text: "There is always light and the end of a tunnel.", author: "Jacob Campbell" },
   { text: "Nunca digas que no puedes.", author: "Alvaro Robledo" },
   { text: "I am always proud of you.", author: "Jacob Campbell" },
+  { text: "Be your self everyone is already taken.", author: "Oscar Wilde"},
+  { text: "In the middle of difficulty lies opportunity.", author: "Albert Einstein"},
+  { text: "There is no shortcuts to any place worth going.",author: "Beverly sills"},
+  { text: "Hard work beats talent when talent doesn't work hard.", author:"Tim Notke"},
+  { text: "Too many overvalue what they are and not and undervalue what they are.",author:"Malcom Flores"},
+  { text: "It never rains for ever the storm will always end.",author:"Aaron Robledo"},
   { text: ""}
+  
   
   
 ];
@@ -19,7 +26,7 @@ function loadCustomQuotes() {
 }
 
 function saveCustomQuotes() {
-  // This will save quotes to browser storage
+ 
 }
 
 function displayQuote() {
@@ -35,10 +42,10 @@ function displayQuote() {
 function addCustomQuote(text, author) {
   let newQuote = {
     text: text,
-    author: author || "Unknown"  // Default to "Unknown" if no author provided
+    author: author || "Unknown"  
   };
   
-  // Fixed: allQuotes (not allQuote) and newQuote (not NewQuote)
+  
   allQuotes.push(newQuote);
   
   console.log("Quote added:", newQuote);
