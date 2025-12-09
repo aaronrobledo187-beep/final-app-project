@@ -1,5 +1,5 @@
 // Default quotes (app-provided)
-const allQuotes = [
+const allQuotes = [ // Used Ai for some of the quotes most quotes are my own
   { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
   { text: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs" },
   { text: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
@@ -14,13 +14,13 @@ const allQuotes = [
   { text: "Hard work beats talent when talent doesn't work hard.", author:"Tim Notke"},
   { text: "Too many overvalue what they are and not and undervalue what they are.",author:"Malcom Flores"},
   { text: "It never rains for ever the storm will always end.",author:"Aaron Robledo"},
-  { text: ""}
+  
   
   
   
 ];
 
-// Load custom quotes from localStorage (you can implement this later)
+// Loads custom quotes from localStorage (you can implement this later)
 function loadCustomQuotes() {
   // This will load saved quotes from browser storage
 }
@@ -29,7 +29,7 @@ function saveCustomQuotes() {
  
 }
 
-function displayQuote() {
+function displayQuote() { //Use A1 on this function
   let randomIndex = Math.floor(Math.random() * allQuotes.length);
   let quote = allQuotes[randomIndex];
   let quoteElement = document.getElementById("quote");
@@ -60,25 +60,25 @@ document.getElementById('add-quote-btn').addEventListener('click', function() {
   let quoteText = document.getElementById('new-quote-text').value;
   let authorName = document.getElementById('new-author').value;
   
-  // Check if quote text is not empty
+  // Checks if quote text is not empty
   if (quoteText.trim() !== '') {
     addCustomQuote(quoteText, authorName);
     
-    // Clear the form after adding
+    // Clears the form after adding
     document.getElementById('new-quote-text').value = '';
     document.getElementById('new-author').value = '';
     
-    // Optional: Display the new quote immediately
+    // Display the new quote immediately
     displayQuote();
   } else {
     alert("Please enter a quote!");
   }
 });
 
-// Add event listener for the New Quote button
+// Adds event listener for the New Quote button
 document.getElementById('new-quote').addEventListener('click', displayQuote);
 
-// Display initial quote when page loads
+// Displays the initial quote when page loads
 displayQuote();
 
 
